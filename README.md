@@ -18,3 +18,10 @@ Frontend: React.js
 Backend: Node.js, Express.js
 Database: MongoDB Atlas
 Authentication: Firebase Google Auth
+OUTPUT:
+![Image](https://github.com/user-attachments/assets/7abb067b-5b86-44da-b718-49b9957b7bb6)
+![Image](https://github.com/user-attachments/assets/555786cc-25cf-4ef2-9458-8c65a7af5417)
+![Image](https://github.com/user-attachments/assets/581e934a-b075-4b94-bd24-6a4046dcd9c9)
+![Image](https://github.com/user-attachments/assets/ba8ffe22-9549-46a6-8aec-3796384e3308)
+![Image](https://github.com/user-attachments/assets/f8afed76-7a03-4d7e-97e5-2fc9f03d2b09)
+![Image](https://github.com/user-attachments/assets/7f0dddc8-43d3-47c4-afe0-34f463963bc4)
