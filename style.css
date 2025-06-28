@@ -1,0 +1,501 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f7f9;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  background: linear-gradient(90deg, #2e7d32, #66bb6a);
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  color: white;
+  font-size: 1.8em;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+nav ul li a:hover {
+  opacity: 0.8;
+}
+
+/* Main Content */
+main {
+  padding: 2em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4em 2em;
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero-text {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.cta-button {
+  padding: 0.8em 1.5em;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.3s;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+}
+
+.cta-button.primary {
+  background: white;
+  color: #4CAF50;
+}
+
+.cta-button.secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+/* Features Section */
+.main-features {
+  margin-bottom: 3em;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.feature-card {
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+}
+
+.feature-list li {
+  margin: 0.5em 0;
+  color: #666;
+}
+
+.feature-link {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Quick Stats */
+.quick-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  margin-bottom: 3em;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #4CAF50;
+  margin: 0.5em 0;
+}
+
+.stat-desc {
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Quick Actions */
+.quick-actions {
+  margin-bottom: 3em;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.action-card {
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+}
+
+.action-icon {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+/* Inventory Page Styles */
+.inventory-section {
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #666;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2em;
+}
+
+th, td {
+  padding: 1em;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #f8f9fa;
+  font-weight: 500;
+}
+
+/* Donation Page Styles */
+.donation-header {
+  text-align: center;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.donation-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.donation-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.donation-list {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.donation-items {
+  list-style: none;
+  padding: 0;
+}
+
+.donation-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s;
+}
+
+.donation-item:hover {
+  background-color: #f9f9f9;
+}
+
+.item-info h4 {
+  margin: 0;
+  color: #333;
+}
+
+.item-info p {
+  margin: 0.25rem 0;
+  color: #666;
+}
+
+.donate-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.donate-btn:hover {
+  background: #45a049;
+}
+
+.donation-partners {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.partner-card {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.partner-card h4 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.partner-card p {
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.contact-btn {
+  background: #2196F3;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+  background: #1976D2;
+}
+
+/* Analytics Page Styles */
+.analytics-header {
+  text-align: center;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.analytics-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.analytics-charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.chart-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.chart {
+  height: 300px;
+  margin-top: 1rem;
+}
+
+.analytics-insights {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.insight-card {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.insight-card h4 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.insight-card p {
+  color: #666;
+  margin: 0;
+}
+
+/* Status Colors */
+.status-fresh {
+  color: #4CAF50;
+}
+
+.status-near {
+  color: #FFA726;
+}
+
+.status-expired {
+  color: #EF5350;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+    padding: 1em;
+  }
+
+  nav ul {
+    margin-top: 1em;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .hero {
+    padding: 2em 1em;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .features-grid,
+  .quick-stats,
+  .actions-grid,
+  .donation-stats,
+  .partners-grid,
+  .analytics-stats,
+  .analytics-charts,
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-container {
+    min-width: 100%;
+  }
+
+  .donation-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+} 

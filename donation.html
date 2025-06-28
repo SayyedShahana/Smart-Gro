@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donations - Smart Inventory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Smart Inventory</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="donation.html">Donations</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="donation-header">
+      <h2>Food Donation Program</h2>
+      <p>Help reduce food waste by donating items near expiry</p>
+    </section>
+
+    <section class="donation-stats">
+      <div class="stat-card">
+        <h3>Total Donations</h3>
+        <p class="stat-number">0</p>
+        <p class="stat-desc">Items donated this month</p>
+      </div>
+      <div class="stat-card">
+        <h3>Impact</h3>
+        <p class="stat-number">0</p>
+        <p class="stat-desc">People helped</p>
+      </div>
+      <div class="stat-card">
+        <h3>Waste Reduced</h3>
+        <p class="stat-number">0 kg</p>
+        <p class="stat-desc">Food waste prevented</p>
+      </div>
+    </section>
+
+    <section class="donation-list">
+      <h3>Items Available for Donation</h3>
+      <div class="filters">
+        <select id="donationCategory">
+          <option value="all">All Categories</option>
+          <option value="dairy">Dairy</option>
+          <option value="produce">Produce</option>
+          <option value="canned">Canned Goods</option>
+          <option value="bakery">Bakery</option>
+        </select>
+        <select id="donationStatus">
+          <option value="all">All Status</option>
+          <option value="urgent">Urgent (1 day)</option>
+          <option value="soon">Soon (2-3 days)</option>
+        </select>
+      </div>
+      <ul id="donationList" class="donation-items">
+        <!-- Donation items will be added here dynamically -->
+      </ul>
+    </section>
+
+    <section class="donation-partners">
+      <h3>Our Donation Partners</h3>
+      <div class="partners-grid">
+        <div class="partner-card">
+          <h4>Local Food Bank</h4>
+          <p>Accepts all non-perishable items</p>
+          <p>Open: Mon-Sat, 9 AM - 5 PM</p>
+          <button class="contact-btn">Contact</button>
+        </div>
+        <div class="partner-card">
+          <h4>Community Kitchen</h4>
+          <p>Accepts fresh produce and dairy</p>
+          <p>Open: Daily, 8 AM - 8 PM</p>
+          <button class="contact-btn">Contact</button>
+        </div>
+        <div class="partner-card">
+          <h4>Homeless Shelter</h4>
+          <p>Accepts all food items</p>
+          <p>Open: 24/7</p>
+          <button class="contact-btn">Contact</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="donation.js"></script>
+</body>
+</html> 

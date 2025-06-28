@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics - Smart Inventory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Smart Inventory</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="donation.html">Donations</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="analytics-header">
+      <h2>Waste Analytics Dashboard</h2>
+      <p>Track and analyze your inventory performance</p>
+    </section>
+
+    <section class="analytics-stats">
+      <div class="stat-card">
+        <h3>Total Tracked Items</h3>
+        <p class="stat-number">120</p>
+        <p class="stat-desc">Active inventory items</p>
+      </div>
+      <div class="stat-card">
+        <h3>Near Expiry</h3>
+        <p class="stat-number">15</p>
+        <p class="stat-desc">Items expiring soon</p>
+      </div>
+      <div class="stat-card">
+        <h3>Expired</h3>
+        <p class="stat-number">5</p>
+        <p class="stat-desc">Items expired this month</p>
+      </div>
+      <div class="stat-card">
+        <h3>Suggested Restocks</h3>
+        <p class="stat-number">10</p>
+        <p class="stat-desc">Items to reorder</p>
+      </div>
+    </section>
+
+    <section class="analytics-charts">
+      <div class="chart-container">
+        <h3>Waste Reduction Trend</h3>
+        <div class="chart" id="wasteChart">
+          <!-- Chart will be rendered here -->
+        </div>
+      </div>
+      <div class="chart-container">
+        <h3>Category Distribution</h3>
+        <div class="chart" id="categoryChart">
+          <!-- Chart will be rendered here -->
+        </div>
+      </div>
+    </section>
+
+    <section class="analytics-insights">
+      <h3>Key Insights</h3>
+      <div class="insights-grid">
+        <div class="insight-card">
+          <h4>Waste Reduction</h4>
+          <p>65% reduction in food waste compared to last month</p>
+        </div>
+        <div class="insight-card">
+          <h4>Cost Savings</h4>
+          <p>Estimated savings of $500 through better inventory management</p>
+        </div>
+        <div class="insight-card">
+          <h4>Donation Impact</h4>
+          <p>456 items donated, helping 200+ people in need</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html> 

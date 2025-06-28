@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory - Smart Inventory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Smart Inventory</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="donation.html">Donations</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="inventory-section">
+      <h2>Track Your Inventory</h2>
+      <form id="productForm">
+        <div class="form-group">
+          <label for="productName">Product Name</label>
+          <input type="text" id="productName" required>
+        </div>
+        <div class="form-group">
+          <label for="barcode">Barcode</label>
+          <input type="text" id="barcode" required>
+        </div>
+        <div class="form-group">
+          <label for="expiryDate">Expiry Date</label>
+          <input type="date" id="expiryDate" required>
+        </div>
+        <button type="submit">Add Product</button>
+      </form>
+
+      <div class="filters">
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+          <option value="dairy">Dairy</option>
+          <option value="produce">Produce</option>
+          <option value="canned">Canned Goods</option>
+          <option value="bakery">Bakery</option>
+        </select>
+        <select id="statusFilter">
+          <option value="all">All Status</option>
+          <option value="fresh">Fresh</option>
+          <option value="near-expiry">Near Expiry</option>
+          <option value="expired">Expired</option>
+        </select>
+      </div>
+
+      <table id="inventoryTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Barcode</th>
+            <th>Expiry</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="inventory.js"></script>
+</body>
+</html> 
